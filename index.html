@@ -1,0 +1,163 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Trilha da Palavra SN</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="hero" id="startScreen">
+        <div class="hero-art" aria-hidden="true">
+          <span class="sun"></span><span class="path"></span>
+          <span class="marker marker-one">Jesus</span><span class="marker marker-two">Davi</span><span class="marker marker-three">Ester</span>
+        </div>
+        <div class="hero-content">
+          <div class="hero-actions" aria-label="Controles do jogo">
+            <button class="icon-button" id="soundToggle" type="button" aria-pressed="false" title="Ativar sons">♪</button>
+            <button class="icon-button" id="guideToggle" type="button" aria-expanded="false" aria-controls="guidePanel" title="Modo responsável">?</button>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="setupPanel"><span></span><span></span><span></span><strong>Menu</strong></button>
+          </div>
+          <div class="brand-lockup">
+            <span class="brand-mark" aria-hidden="true">SN</span>
+            <p class="eyebrow">Desafios bíblicos práticos - 9 a 13 anos</p>
+          </div>
+          <h1>Trilha da Palavra SN</h1>
+          <p class="intro">Escolha o desafio da semana, jogue uma rodada curta e saia com uma missão prática para viver em família, igreja ou escola bíblica.</p>
+          <div class="hero-stats" aria-label="Destaques do jogo">
+            <span><strong>7</strong> dias</span>
+            <span><strong>3</strong> ambientes</span>
+            <span><strong>1</strong> missão</span>
+          </div>
+          <div class="quick-start-panel">
+            <button class="primary-button" id="quickStartButton" type="button">Começar agora</button>
+            <span>Rodada curta com tema da semana selecionado.</span>
+          </div>
+          <p class="age-note">Criado para crianças e pré-adolescentes de 9 a 13 anos, com desafios curtos para conversar, praticar e acompanhar sem cadastro.</p>
+          <section class="guide-panel hidden" id="guidePanel" aria-labelledby="guideTitle">
+            <div>
+              <p class="eyebrow">Modo família, igreja e escola</p>
+              <h2 id="guideTitle">Roteiro rápido de aplicação</h2>
+              <p>O jogo não tem login, chat, anúncios, compras ou coleta de dados pessoais. O progresso fica apenas neste navegador.</p>
+            </div>
+            <ul>
+              <li>Escolha o desafio da semana e jogue uma rodada curta.</li>
+              <li>Leia o feedback e combine uma missão prática para os próximos dias.</li>
+              <li>No grupo, peça que cada participante conte como viveu a missão.</li>
+            </ul>
+            <div class="leader-note">
+              <strong>Roteiro do líder:</strong>
+              <span>2 min para escolher o tema, 5 min para jogar, 3 min para combinar a missão e o retorno da semana.</span>
+            </div>
+          </section>
+          <section class="weekly-panel" aria-labelledby="weeklyTitle">
+            <div>
+              <p class="eyebrow">Desafio da semana</p>
+              <h2 id="weeklyTitle">Missão prática para viver fora da tela</h2>
+              <p id="weeklyDescription">Escolha um tema, jogue uma rodada e use o cartão final para lembrar a missão.</p>
+            </div>
+            <div class="weekly-actions" id="weeklyActions" aria-label="Temas da semana">
+              <button class="weekly-card active" type="button" data-weekly="respeito"><strong>Respeito</strong><span>palavras e atitudes</span></button>
+              <button class="weekly-card" type="button" data-weekly="coragem"><strong>Coragem</strong><span>fazer o certo</span></button>
+              <button class="weekly-card" type="button" data-weekly="perdao"><strong>Perdão</strong><span>recomeçar relações</span></button>
+              <button class="weekly-card" type="button" data-weekly="celular"><strong>Celular</strong><span>uso com sabedoria</span></button>
+              <button class="weekly-card" type="button" data-weekly="amizade"><strong>Amizade</strong><span>cuidado e inclusão</span></button>
+              <button class="weekly-card" type="button" data-weekly="familia"><strong>Família</strong><span>serviço e respeito</span></button>
+              <button class="weekly-card" type="button" data-weekly="verdade"><strong>Verdade</strong><span>coragem para assumir</span></button>
+              <button class="weekly-card" type="button" data-weekly="gratidao"><strong>Gratidão</strong><span>reconhecer o cuidado</span></button>
+              <button class="weekly-card" type="button" data-weekly="oracao"><strong>Oração</strong><span>falar com Deus</span></button>
+              <button class="weekly-card" type="button" data-weekly="responsabilidade"><strong>Responsabilidade</strong><span>cumprir combinados</span></button>
+              <button class="weekly-card" type="button" data-weekly="lideranca"><strong>Liderança</strong><span>servir e ouvir</span></button>
+              <button class="weekly-card" type="button" data-weekly="esperanca"><strong>Esperança</strong><span>tentar de novo</span></button>
+              <button class="weekly-card" type="button" data-weekly="servico"><strong>Serviço</strong><span>ajudar sem aparecer</span></button>
+              <button class="weekly-card" type="button" data-weekly="pressao"><strong>Pressão</strong><span>não seguir o erro</span></button>
+              <button class="weekly-card" type="button" data-weekly="recomeco"><strong>Recomeço</strong><span>mudar atitude</span></button>
+              <button class="weekly-card" type="button" data-weekly="proposito"><strong>Propósito</strong><span>não desistir do bem</span></button>
+            </div>
+          </section>
+          <section class="group-panel" aria-labelledby="groupTitle">
+            <p class="eyebrow">Modo grupo - 10 minutos</p>
+            <h2 id="groupTitle">Para aula, célula ou conversa em família</h2>
+            <div class="group-steps" aria-label="Roteiro de aplicação em grupo">
+              <span><strong>1</strong> Escolha o tema</span>
+              <span><strong>2</strong> Jogue uma rodada</span>
+              <span><strong>3</strong> Combine a missão</span>
+            </div>
+          </section>
+          <section class="calendar-panel" aria-labelledby="calendarTitle">
+            <p class="eyebrow">Plano de 12 semanas</p>
+            <h2 id="calendarTitle">Temas para voltar toda semana</h2>
+            <div class="calendar-grid" aria-label="Calendário de desafios">
+              <span>1 Respeito</span><span>2 Coragem</span><span>3 Perdão</span><span>4 Celular</span>
+              <span>5 Amizade</span><span>6 Família</span><span>7 Verdade</span><span>8 Gratidão</span>
+              <span>9 Oração</span><span>10 Responsabilidade</span><span>11 Liderança</span><span>12 Esperança</span>
+            </div>
+          </section>
+          <section class="phase-panel" aria-labelledby="phaseTitle">
+            <div class="section-label"><span>1</span><strong id="phaseTitle">Escolha uma fase rápida</strong></div>
+            <div class="phase-track" id="phaseTrack" aria-label="Fases rápidas">
+              <button class="phase-card" type="button" data-phase="coragem"><strong>Coragem</strong><span>Davi e Ester</span></button>
+              <button class="phase-card" type="button" data-phase="perdao"><strong>Perdão</strong><span>Jesus e José</span></button>
+              <button class="phase-card" type="button" data-phase="sabedoria"><strong>Sabedoria</strong><span>Daniel e Moisés</span></button>
+              <button class="phase-card" type="button" data-phase="recomeco"><strong>Recomeço</strong><span>Paulo e Ana</span></button>
+            </div>
+          </section>
+          <div class="setup-panel" id="setupPanel">
+            <div class="section-label"><span>2</span><strong>Escolha sua jornada</strong></div>
+            <div class="mission-map" aria-label="Mapa de missões">
+              <button class="mission-card active" type="button" data-mission="all" data-accent="trail"><span class="mission-symbol">T</span><strong>Trilha completa</strong><span>Todos os personagens</span><small class="mission-status">Novo</small></button>
+              <button class="mission-card" type="button" data-mission="Jesus" data-accent="jesus"><span class="mission-symbol">J</span><strong>Jesus</strong><span>Amor, serviço e perdão</span><small class="mission-status">Novo</small></button>
+              <button class="mission-card" type="button" data-mission="Davi" data-accent="davi"><span class="mission-symbol">D</span><strong>Davi</strong><span>Coragem e arrependimento</span><small class="mission-status">Novo</small></button>
+              <button class="mission-card" type="button" data-mission="Ester" data-accent="ester"><span class="mission-symbol">E</span><strong>Ester</strong><span>Coragem e decisão</span><small class="mission-status">Novo</small></button>
+              <button class="mission-card" type="button" data-mission="Daniel" data-accent="daniel"><span class="mission-symbol">D</span><strong>Daniel</strong><span>Fidelidade e pressão</span><small class="mission-status">Novo</small></button>
+              <button class="mission-card" type="button" data-mission="José do Egito" data-accent="jose"><span class="mission-symbol">J</span><strong>José do Egito</strong><span>Perdão e propósito</span><small class="mission-status">Novo</small></button>
+              <button class="mission-card" type="button" data-mission="Ana" data-accent="ana"><span class="mission-symbol">A</span><strong>Ana</strong><span>Perseverança e oração</span><small class="mission-status">Novo</small></button>
+              <button class="mission-card" type="button" data-mission="Moisés" data-accent="moises"><span class="mission-symbol">M</span><strong>Moisés</strong><span>Liderança e responsabilidade</span><small class="mission-status">Novo</small></button>
+              <button class="mission-card" type="button" data-mission="Paulo" data-accent="paulo"><span class="mission-symbol">P</span><strong>Paulo</strong><span>Transformação e recomeço</span><small class="mission-status">Novo</small></button>
+              <button class="mission-card" type="button" data-mission="Minha Escolha" data-accent="final"><span class="mission-symbol">F</span><strong>Minha Escolha</strong><span>Fase final da jornada</span><small class="mission-status">Novo</small></button>
+            </div>
+            <div class="section-label"><span>3</span><strong>Escolha o tipo de desafio</strong></div>
+            <div class="mode-picker" aria-label="Escolha o modo de jogo">
+              <button class="mode-button active" type="button" data-mode="bible"><strong>Missões Bíblicas</strong><span>Personagens, histórias e lições</span></button>
+              <button class="mode-button" type="button" data-mode="life"><strong>E se fosse com você?</strong><span>Situações reais do dia a dia</span></button>
+              <button class="mode-button" type="button" data-mode="story"><strong>História com decisões</strong><span>Cenas curtas com consequências</span></button>
+            </div>
+          </div>
+          <section class="collection-panel" aria-labelledby="collectionTitle">
+            <div>
+              <p class="eyebrow">Sua coleção</p>
+              <h2 id="collectionTitle">Medalhas da jornada</h2>
+              <p id="collectionSummary">Complete missões para desbloquear medalhas por personagem.</p>
+            </div>
+            <div class="collection-stats" aria-label="Resumo do progresso">
+              <strong id="collectionTotal">0/8</strong>
+              <span>personagens</span>
+            </div>
+            <div class="collection-grid" id="collectionGrid" aria-label="Coleção de personagens"></div>
+            <div class="next-goal" id="nextGoal">Próximo alvo: escolha uma missão e busque sua primeira medalha.</div>
+          </section>
+          <section class="reward-preview" aria-label="Recompensas do jogo">
+            <span>Bronze</span><span>Prata</span><span>Ouro</span><span>Mestre</span>
+          </section>
+          <button class="primary-button" id="startButton">Iniciar desafio prático</button>
+        </div>
+      </section>
+      <section class="game hidden" id="gameScreen" aria-live="polite">
+        <header class="topbar"><div><p class="label" id="phaseText">Missão</p><h2 id="themeText">Jesus</h2></div><div class="score-grid"><div class="score" aria-label="Pontuação"><span id="scoreText">0</span><span>pontos</span></div><div class="score streak" aria-label="Sequência de acertos"><span id="streakText">0</span><span>combo</span></div></div></header>
+        <section class="mission-strip" aria-label="Resumo do desafio atual">
+          <div class="challenge-badge" id="challengeBadge">Desafio da semana</div>
+          <div class="stage-track" id="stageTrack" aria-label="Etapas da missão"></div>
+        </section>
+        <div class="progress-shell" aria-label="Progresso"><div class="progress-bar" id="progressBar"></div></div>
+        <article class="question-panel"><p class="question-count" id="questionCount">Pergunta 1 de 10</p><div class="character-scene" id="characterScene"><div class="character-avatar" id="characterAvatar">J</div><div class="speech-bubble"><strong id="characterName">Jesus</strong><span id="characterLine">Escolha uma atitude que mostre amor em ação.</span></div></div><h3 id="questionText"></h3><button class="hint-button" id="hintButton" type="button">Preciso de uma dica</button><div class="hint-box hidden" id="hintBox"></div><div class="answers" id="answers"></div><div class="feedback hidden" id="feedback"></div><button class="next-button hidden" id="nextButton">Próxima</button></article>
+      </section>
+      <section class="result hidden" id="resultScreen"><div class="reward-burst" aria-hidden="true"><span></span><span></span><span></span></div><div class="result-badge" id="resultScore">0 pontos</div><p class="eyebrow" id="resultLevel">Aprendiz</p><h2 id="resultTitle">Desafio concluído</h2><p id="resultMessage"></p><div class="achievement-list" id="achievementList" aria-label="Conquistas da rodada"></div><div class="mission" id="dailyMission"></div><article class="share-card" id="shareCard" aria-labelledby="shareTitle"><div class="share-ribbon">Trilha da Palavra SN</div><p class="eyebrow">Cartão da missão</p><h3 id="shareTitle">Missão da semana</h3><div class="share-meta"><span id="shareSeal">Selo Aprendiz</span><span id="shareTheme">Desafio Respeito</span></div><p id="shareText">Completei um desafio bíblico prático na Trilha da Palavra SN.</p></article><div class="result-actions"><button class="primary-button" id="downloadShareButton" type="button">Salvar cartão PNG</button><button class="primary-button" id="copyShareButton" type="button">Copiar cartão</button><button class="primary-button" id="continueButton">Continuar jornada</button><button class="secondary-button" id="restartButton">Jogar de novo</button></div></section>
+    </main>
+    <script src="data.js?v=20260505-4"></script>
+    <script src="script.js?v=20260505-4"></script>
+  </body>
+</html>
