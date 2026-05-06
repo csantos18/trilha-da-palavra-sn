@@ -25,7 +25,7 @@ A ferramenta combina desafio da semana, perguntas, escolhas do dia a dia, feedba
 - Etapas visuais e selo do desafio para reforçar sensação de missão.
 - Modo responsável com orientação de uso seguro.
 - Plano de 12 semanas para uso recorrente.
-- Funciona como projeto local estático em navegador.
+- Funciona como site estático publicado no Netlify e também pode rodar localmente no navegador.
 - Documentação com PRD oficial, LGPD e roteiro de teste.
 
 ## Público Ideal
@@ -47,10 +47,11 @@ A ferramenta combina desafio da semana, perguntas, escolhas do dia a dia, feedba
 
 ## Pacotes Possíveis
 
-- **Demonstração local:** entrega do projeto para uso em computador.
+- **Demonstração online:** link público publicado no Netlify para teste em celular, tablet e computador.
+- **Demonstração local:** entrega do projeto para uso em computador, quando necessário.
 - **Personalização visual:** nome, cores e texto adaptados para igreja ou escola.
 - **Pacote educativo:** revisão de conteúdo, roteiro de aula e orientação de uso.
-- **Versão online futura:** publicação em domínio ou hospedagem própria.
+- **Publicação em domínio próprio:** etapa opcional para clientes que desejam endereço personalizado.
 
 ## Observação Profissional
 

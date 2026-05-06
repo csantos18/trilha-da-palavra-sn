@@ -22,13 +22,14 @@ O arquivo `netlify.toml` define:
 2. Criar uma conta gratuita ou entrar em uma conta existente.
 3. Publicar a pasta do projeto.
 4. Testar o link público no celular, tablet e computador.
-5. Enviar o link final pelo WhatsApp somente depois de validar que o botão "Começar agora" inicia uma rodada.
+5. Enviar o link final pelo WhatsApp somente depois de validar que um card de tema inicia uma rodada.
 
 ## Critério de Aceite
 
 - O link abre fora do computador local.
 - O site carrega no celular usando internet móvel ou Wi-Fi de outra cidade.
-- O botão "Começar agora" inicia a primeira pergunta.
+- Um card de tema inicia a primeira pergunta automaticamente.
+- O botão "Começar agora" continua funcionando como caminho alternativo para o tema padrão.
 - Depois de responder, aparece o botão "Próxima".
 - A tela final aparece ao concluir a rodada.
 
