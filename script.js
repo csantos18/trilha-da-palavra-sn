@@ -310,6 +310,11 @@ function setWeeklyChallenge(challenge) {
   setPhase(selected.phase, true);
 }
 
+function startWeeklyChallenge(challenge) {
+  setWeeklyChallenge(challenge);
+  startGame();
+}
+
 function updateMissionCards() {
   missionCards.forEach((card) => {
     const mission = card.dataset.mission;
@@ -662,7 +667,7 @@ function renderCollection() {
 missionCards.forEach((card) => on(card, "click", () => setMission(card.dataset.mission)));
 modeButtons.forEach((button) => on(button, "click", () => setMode(button.dataset.mode)));
 phaseCards.forEach((card) => on(card, "click", () => setPhase(card.dataset.phase)));
-weeklyCards.forEach((card) => on(card, "click", () => setWeeklyChallenge(card.dataset.weekly)));
+weeklyCards.forEach((card) => on(card, "click", () => startWeeklyChallenge(card.dataset.weekly)));
 on(startButton, "click", startGame);
 on(quickStartButton, "click", startGame);
 on(restartButton, "click", startGame);

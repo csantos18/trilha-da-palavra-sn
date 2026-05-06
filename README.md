@@ -69,6 +69,7 @@ As telas demonstram o posicionamento do produto como ferramenta educativa práti
 - Sons opcionais para acerto, erro, início e conclusão.
 - Recompensas visuais na tela final.
 - Desafio da semana com 16 temas práticos para uso recorrente.
+- Início automático da rodada ao tocar em um card de tema.
 - Cartão de missão copiável para compartilhar ou acompanhar.
 - Cartão de missão em PNG, gerado localmente e sem internet.
 - Roteiro de aplicação para família, igreja e escola bíblica.
