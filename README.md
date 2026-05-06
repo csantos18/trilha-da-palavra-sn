@@ -1,16 +1,51 @@
-﻿# Trilha da Palavra SN
+# Trilha da Palavra SN
 
 Ferramenta de desafios bíblicos práticos para crianças e pré-adolescentes de 9 a 13 anos, criada para família, igreja e escola bíblica. O projeto transforma histórias e valores bíblicos em missões semanais para praticar fora da tela.
 
-## Objetivo
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=000)
+![Netlify](https://img.shields.io/badge/Deploy-Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white)
 
-Oferecer uma experiência segura, simples e educativa para conduzir conversas, desafios práticos e acompanhamento em casa, aula ou grupo, sem login, sem chat, sem anúncios, sem compras e sem coleta de dados pessoais.
+## Links Rápidos
+
+- [Demo online](https://trilha-da-palavra-sn.netlify.app)
+- [PRD do produto](docs/PRD.md)
+- [Política de privacidade/LGPD](docs/POLITICA_PRIVACIDADE_LGPD.md)
+- [Demonstração visual](#demonstração-visual)
+- [Preview das telas](#preview)
+- [Como rodar localmente](#como-rodar-localmente)
+- [Qualidade e testes](#qualidade-e-testes)
+- [Rotas principais](#rotas-principais)
+- [Material comercial](docs/MATERIAL_COMERCIAL.md)
+- [Roteiro de teste com público-alvo](docs/ROTEIRO_TESTE_PUBLICO.md)
+- [Deploy gratuito](docs/DEPLOY_GRATUITO.md)
+
+## Visão Geral
+
+O projeto oferece uma experiência segura, simples e educativa para conduzir conversas, desafios práticos e acompanhamento em casa, aula ou grupo, sem login, sem chat, sem anúncios, sem compras e sem coleta de dados pessoais.
+
+O ciclo principal é:
+
+```text
+tema da semana -> pergunta -> feedback -> missão prática -> cartão compartilhável
+```
 
 ## Público-alvo
 
 - Principal: crianças e pré-adolescentes de 9 a 13 anos.
 - Secundário: famílias, professores, líderes e responsáveis que conduzem o desafio.
 - Uso indicado: família, igreja, escola bíblica, pequenos grupos e atividades educativas.
+
+## Preview
+
+| Tela inicial | Pergunta no desktop | Pergunta no celular |
+| --- | --- | --- |
+| ![Tela inicial](docs/screenshots/home-desktop.png) | ![Pergunta no desktop](docs/screenshots/question-desktop.png) | ![Pergunta no celular](docs/screenshots/question-mobile.png) |
+
+## Demonstração Visual
+
+As telas demonstram o posicionamento do produto como ferramenta educativa prática: escolha de desafio semanal, rodada curta, respostas próximas da pergunta no celular, feedback acolhedor, missão final e cartão para acompanhamento.
 
 ## Funcionalidades
 
@@ -42,21 +77,50 @@ Oferecer uma experiência segura, simples e educativa para conduzir conversas, d
 - Feedback motivador para erro, sem punir a criança.
 - Plano de 12 semanas para uso recorrente.
 
-## Como Executar
+## Como Rodar Localmente
 
 Abra o arquivo `index.html` no navegador ou execute com um servidor local simples.
 
-Exemplo:
-
 ```bash
-python -m http.server 8000
+python -m http.server 8013
 ```
 
 Depois acesse:
 
 ```text
-http://localhost:8000
+http://localhost:8013
 ```
+
+## Qualidade e Testes
+
+Validações locais recomendadas:
+
+```bash
+node --check script.js
+node --check data.js
+```
+
+O projeto também foi validado com:
+
+- teste manual no navegador;
+- teste de fluxo iniciar, responder e avançar;
+- checagem de compatibilidade mobile;
+- geração de screenshots de desktop e celular;
+- deploy estático no Netlify.
+
+## Rotas Principais
+
+Este é um projeto estático, sem API e sem servidor próprio. As rotas principais são arquivos públicos:
+
+- `GET /`
+- `GET /index.html`
+- `GET /styles.css`
+- `GET /data.js`
+- `GET /script.js`
+
+## Privacidade
+
+O projeto não coleta nome, e-mail, telefone, imagem, localização ou qualquer dado pessoal. O progresso fica salvo apenas no navegador do usuário, por meio de `localStorage`, e pode ser apagado limpando os dados do navegador.
 
 ## Estrutura
 
@@ -66,25 +130,16 @@ jogo/
 ├── styles.css
 ├── data.js
 ├── script.js
+├── netlify.toml
 ├── README.md
 └── docs/
     ├── PRD.md
     ├── POLITICA_PRIVACIDADE_LGPD.md
     ├── MATERIAL_COMERCIAL.md
-    └── ROTEIRO_TESTE_PUBLICO.md
+    ├── ROTEIRO_TESTE_PUBLICO.md
+    ├── DEPLOY_GRATUITO.md
+    └── screenshots/
 ```
-
-## Documentação Oficial
-
-- [PRD oficial](docs/PRD.md)
-- [Política de Privacidade e LGPD](docs/POLITICA_PRIVACIDADE_LGPD.md)
-- [Material comercial](docs/MATERIAL_COMERCIAL.md)
-- [Roteiro de teste com público-alvo](docs/ROTEIRO_TESTE_PUBLICO.md)
-- [Deploy gratuito](docs/DEPLOY_GRATUITO.md)
-
-## Privacidade
-
-O projeto não coleta nome, e-mail, telefone, imagem, localização ou qualquer dado pessoal. O progresso fica salvo apenas no navegador do usuário, por meio de `localStorage`, e pode ser apagado limpando os dados do navegador.
 
 ## Status do Projeto
 
