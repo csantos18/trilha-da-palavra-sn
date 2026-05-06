@@ -1,41 +1,42 @@
 # Trilha da Palavra SN
 
-Ferramenta de desafios bíblicos práticos para crianças e pré-adolescentes de 9 a 13 anos, criada para família, igreja e escola bíblica. O projeto transforma histórias e valores bíblicos em missões semanais para praticar fora da tela.
+Ferramenta de desafios biblicos praticos para criancas e pre-adolescentes de 9 a 13 anos, criada para familia, igreja e escola biblica. O projeto transforma historias e valores biblicos em missoes semanais para praticar fora da tela.
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=000)
 ![Netlify](https://img.shields.io/badge/Deploy-Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white)
 
-## Links Rápidos
+## Links Rapidos
 
 - [Demo online](https://trilha-da-palavra-sn.netlify.app)
+- [Documentacao profissional](docs/README.md)
 - [PRD do produto](docs/PRD.md)
-- [Política de privacidade/LGPD](docs/POLITICA_PRIVACIDADE_LGPD.md)
-- [Demonstração visual](#demonstração-visual)
-- [Preview das telas](#preview)
-- [Como rodar localmente](#como-rodar-localmente)
-- [Qualidade e testes](#qualidade-e-testes)
-- [Rotas principais](#rotas-principais)
-- [Material comercial](docs/MATERIAL_COMERCIAL.md)
-- [Roteiro de teste com público-alvo](docs/ROTEIRO_TESTE_PUBLICO.md)
-- [Deploy gratuito](docs/DEPLOY_GRATUITO.md)
+- [Relatorio tecnico](docs/RELATORIO_TECNICO.md)
+- [Guia de deploy](docs/DEPLOY.md)
+- [Operacao do cliente](docs/OPERACAO_CLIENTE.md)
+- [Roteiro de apresentacao](docs/ROTEIRO_APRESENTACAO.md)
+- [Proposta comercial](docs/PROPOSTA_COMERCIAL.md)
+- [Checklist de implantacao](docs/CHECKLIST_IMPLANTACAO.md)
+- [Termos minimos](docs/TERMOS_MINIMOS.md)
+- [Politica de privacidade/LGPD](docs/POLITICA_PRIVACIDADE_LGPD.md)
+- [Evolucao para producao robusta](docs/EVOLUCAO_PRODUCAO.md)
 
-## Visão Geral
+## Visao Geral
 
-O projeto oferece uma experiência segura, simples e educativa para conduzir conversas, desafios práticos e acompanhamento em casa, aula ou grupo, sem login, sem chat, sem anúncios, sem compras e sem coleta de dados pessoais.
+O projeto oferece uma experiencia segura, simples e educativa para conduzir conversas, desafios praticos e acompanhamento em casa, aula ou grupo, sem login, sem chat, sem anuncios, sem compras e sem coleta de dados pessoais.
 
-O ciclo principal é:
+Fluxo principal:
 
 ```text
-tema da semana -> pergunta -> feedback -> missão prática -> cartão compartilhável
+tema da semana -> pergunta -> feedback -> missao pratica -> cartao compartilhavel
 ```
 
-## Público-alvo
+## Publico-alvo
 
-- Principal: crianças e pré-adolescentes de 9 a 13 anos.
-- Secundário: famílias, professores, líderes e responsáveis que conduzem o desafio.
-- Uso indicado: família, igreja, escola bíblica, pequenos grupos e atividades educativas.
+- Principal: criancas e pre-adolescentes de 9 a 13 anos.
+- Secundario: familias, professores, lideres e responsaveis que conduzem o desafio.
+- Uso indicado: familia, igreja, escola biblica, pequenos grupos e atividades educativas.
 
 ## Preview
 
@@ -43,40 +44,27 @@ tema da semana -> pergunta -> feedback -> missão prática -> cartão compartilh
 | --- | --- | --- |
 | ![Tela inicial](docs/screenshots/home-desktop.png) | ![Pergunta no desktop](docs/screenshots/question-desktop.png) | ![Pergunta no celular](docs/screenshots/question-mobile.png) |
 
-## Demonstração Visual
+## Demonstracao Visual
 
-As telas demonstram o posicionamento do produto como ferramenta educativa prática: escolha de desafio semanal, rodada curta, respostas próximas da pergunta no celular, feedback acolhedor, missão final e cartão para acompanhamento.
+As telas demonstram o posicionamento do produto como ferramenta educativa pratica: escolha de desafio semanal, rodada curta, respostas proximas da pergunta no celular, feedback acolhedor, missao final e cartao para acompanhamento.
 
 ## Funcionalidades
 
-- Mapa de missões por personagem.
-- Modos de jogo: missões bíblicas, situações do dia a dia e histórias com decisões.
-- Perguntas de múltipla escolha.
-- Dicas com redução de pontuação.
+- Mapa de missoes por personagem.
+- Modos de jogo: missoes biblicas, situacoes do dia a dia e historias com decisoes.
+- Perguntas de multipla escolha.
+- Dicas com reducao de pontuacao.
 - Feedback educativo depois de cada resposta.
-- Missão prática ao final de cada desafio.
-- Pontuação, combo, nível e medalhas.
-- Progresso salvo somente no navegador do usuário com `localStorage`.
+- Missao pratica ao final de cada desafio.
+- Pontuacao, combo, nivel e medalhas.
+- Progresso salvo somente no navegador do usuario com `localStorage`.
 - Interface responsiva para celular, tablet e desktop.
-- Botão de início rápido para celular e tablet.
-- Tela de perguntas compacta no celular, com respostas mais próximas da pergunta.
-- Rolagem automática para pergunta e próxima ação durante a rodada.
-- Visual confortável, com contraste controlado para leitura prolongada.
-- JavaScript ajustado para maior compatibilidade com navegadores móveis.
-- Acessibilidade básica com foco visível e suporte a redução de movimento.
-- Fases rápidas por tema: coragem, perdão, sabedoria e recomeço.
-- Modo responsável com orientação de uso seguro.
-- Sons opcionais para acerto, erro, início e conclusão.
-- Recompensas visuais na tela final.
-- Desafio da semana com 16 temas práticos para uso recorrente.
-- Início automático da rodada ao tocar em um card de tema.
-- Início automático ao tocar em cards de fase, jornada/personagem, tipo de desafio e coleção.
-- Cartão de missão copiável para compartilhar ou acompanhar.
-- Cartão de missão em PNG, gerado localmente e sem internet.
-- Roteiro de aplicação para família, igreja e escola bíblica.
-- Avatares simbólicos leves para os personagens.
-- Selo do desafio e etapas visuais durante a rodada.
-- Feedback motivador para erro, sem punir a criança.
+- Menu hamburguer no mobile.
+- Botao de inicio rapido para celular e tablet.
+- Tela de perguntas compacta no celular.
+- Rolagem automatica para pergunta e proxima acao durante a rodada.
+- Sons opcionais para acerto, erro, inicio e conclusao.
+- Cartao de missao copiavel e exportavel em PNG.
 - Plano de 12 semanas para uso recorrente.
 
 ## Como Rodar Localmente
@@ -95,24 +83,18 @@ http://localhost:8013
 
 ## Qualidade e Testes
 
-Validações locais recomendadas:
+Validacoes locais recomendadas:
 
 ```bash
 node --check script.js
 node --check data.js
 ```
 
-O projeto também foi validado com:
-
-- teste manual no navegador;
-- teste de fluxo iniciar, responder e avançar;
-- checagem de compatibilidade mobile;
-- geração de screenshots de desktop e celular;
-- deploy estático no Netlify.
+O projeto tambem deve ser validado com teste manual no navegador, fluxo completo de jogo, responsividade em celular/tablet/desktop e revisao pedagogica/biblica antes de uso publico amplo.
 
 ## Rotas Principais
 
-Este é um projeto estático, sem API e sem servidor próprio. As rotas principais são arquivos públicos:
+Este e um projeto estatico, sem API e sem servidor proprio. As rotas principais sao arquivos publicos:
 
 - `GET /`
 - `GET /index.html`
@@ -122,27 +104,33 @@ Este é um projeto estático, sem API e sem servidor próprio. As rotas principa
 
 ## Privacidade
 
-O projeto não coleta nome, e-mail, telefone, imagem, localização ou qualquer dado pessoal. O progresso fica salvo apenas no navegador do usuário, por meio de `localStorage`, e pode ser apagado limpando os dados do navegador.
+O projeto nao coleta nome, e-mail, telefone, imagem, localizacao ou qualquer dado pessoal. O progresso fica salvo apenas no navegador do usuario, por meio de `localStorage`, e pode ser apagado limpando os dados do navegador.
 
 ## Estrutura
 
 ```text
-jogo/
-├── index.html
-├── styles.css
-├── data.js
-├── script.js
-├── netlify.toml
-├── README.md
-└── docs/
-    ├── PRD.md
-    ├── POLITICA_PRIVACIDADE_LGPD.md
-    ├── MATERIAL_COMERCIAL.md
-    ├── ROTEIRO_TESTE_PUBLICO.md
-    ├── DEPLOY_GRATUITO.md
-    └── screenshots/
+Trilha da Palavra SN/
+|-- index.html
+|-- styles.css
+|-- data.js
+|-- script.js
+|-- netlify.toml
+|-- README.md
+`-- docs/
+    |-- README.md
+    |-- PRD.md
+    |-- RELATORIO_TECNICO.md
+    |-- DEPLOY.md
+    |-- OPERACAO_CLIENTE.md
+    |-- ROTEIRO_APRESENTACAO.md
+    |-- PROPOSTA_COMERCIAL.md
+    |-- CHECKLIST_IMPLANTACAO.md
+    |-- TERMOS_MINIMOS.md
+    |-- POLITICA_PRIVACIDADE_LGPD.md
+    |-- EVOLUCAO_PRODUCAO.md
+    `-- screenshots/
 ```
 
 ## Status do Projeto
 
-Versão funcional para validação educativa, demonstração e publicação estática gratuita. Antes de uso público amplo, recomenda-se revisão bíblica, revisão pedagógica e teste acompanhado com o público-alvo.
+Versao funcional para validacao educativa, demonstracao e publicacao estatica gratuita. Antes de uso publico amplo, recomenda-se revisao biblica, revisao pedagogica e teste acompanhado com o publico-alvo.
