@@ -66,6 +66,7 @@ O projeto deixa de ser apenas um quiz e passa a funcionar como ferramenta de des
 - Material comercial e roteiro de teste com público-alvo.
 - Desafio da semana com 16 temas práticos para uso recorrente.
 - Início automático da rodada ao tocar em um card de tema, reduzindo etapas no celular.
+- Início automático ao tocar em cards de fase, jornada/personagem, tipo de desafio e coleção.
 - Cartão de missão copiável ao final da rodada.
 - Cartão de missão em PNG gerado localmente, sem internet e sem serviço externo.
 - Roteiro rápido de aplicação para família, igreja e escola bíblica.
@@ -118,6 +119,7 @@ No mobile, o menu organiza jornada e modo de jogo para preservar clareza e naveg
 - O layout permanece utilizável em celular, tablet e desktop.
 - O jogador encontra um botão de início sem precisar rolar toda a tela inicial no celular.
 - O jogador consegue iniciar uma rodada tocando diretamente no card do desafio escolhido.
+- Os cards de fase, personagem, tipo de desafio e coleção iniciam a rodada sem exigir botão extra.
 - O jogador consegue responder no celular sem procurar as alternativas no fim da tela.
 - A tela de jogo mantém leitura confortável, sem fundo escuro intenso.
 - Os textos aparecem sem erro de codificação.

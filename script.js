@@ -302,6 +302,11 @@ function setPhase(phase, keepWeekly = false) {
   updateMissionCards();
 }
 
+function startPhase(phase) {
+  setPhase(phase);
+  startGame();
+}
+
 function setWeeklyChallenge(challenge) {
   const selected = weeklyChallenges[challenge];
   if (!selected) return;
@@ -312,6 +317,16 @@ function setWeeklyChallenge(challenge) {
 
 function startWeeklyChallenge(challenge) {
   setWeeklyChallenge(challenge);
+  startGame();
+}
+
+function startMission(mission) {
+  setMission(mission);
+  startGame();
+}
+
+function startMode(mode) {
+  setMode(mode);
   startGame();
 }
 
@@ -659,14 +674,14 @@ function renderCollection() {
     item.className = `collection-item ${saved.medal.toLowerCase()}`;
     item.type = "button";
     item.innerHTML = `<strong>${mission}</strong><span>${saved.medal}</span><small>${saved.bestScore || 0} pontos</small>`;
-    item.addEventListener("click", () => setMission(mission));
+    item.addEventListener("click", () => startMission(mission));
     collectionGrid.appendChild(item);
   });
 }
 
-missionCards.forEach((card) => on(card, "click", () => setMission(card.dataset.mission)));
-modeButtons.forEach((button) => on(button, "click", () => setMode(button.dataset.mode)));
-phaseCards.forEach((card) => on(card, "click", () => setPhase(card.dataset.phase)));
+missionCards.forEach((card) => on(card, "click", () => startMission(card.dataset.mission)));
+modeButtons.forEach((button) => on(button, "click", () => startMode(button.dataset.mode)));
+phaseCards.forEach((card) => on(card, "click", () => startPhase(card.dataset.phase)));
 weeklyCards.forEach((card) => on(card, "click", () => startWeeklyChallenge(card.dataset.weekly)));
 on(startButton, "click", startGame);
 on(quickStartButton, "click", startGame);

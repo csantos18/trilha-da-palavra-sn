@@ -15,6 +15,7 @@ Validar se crianças e pré-adolescentes de 9 a 13 anos entendem o jogo, gostam 
 
 - Abrir o jogo no navegador do celular, tablet ou computador.
 - Tocar em um card de tema para validar o caminho mais rápido.
+- Tocar em um card de fase, personagem e tipo de desafio para validar que todos iniciam a rodada.
 - Usar o botão "Começar agora" em outro teste para validar o tema padrão.
 - Escolher uma fase rápida em outro teste para validar a navegação completa.
 - Explicar apenas que o jogador deve responder e ler o feedback.
@@ -25,6 +26,7 @@ Validar se crianças e pré-adolescentes de 9 a 13 anos entendem o jogo, gostam 
 - O jogador entendeu onde clicar?
 - O botão de início ficou fácil de encontrar no celular?
 - Tocar no card do tema iniciou a rodada sem etapa extra?
+- Os cards de fase, personagem e tipo de desafio também iniciaram a rodada sem etapa extra?
 - As respostas ficaram próximas da pergunta, sem exigir rolagem longa?
 - O jogador percebeu que existem fases e missões?
 - A pergunta ficou clara?
