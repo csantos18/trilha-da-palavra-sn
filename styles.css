@@ -432,6 +432,7 @@ h1 {
   min-height: 92px;
   align-content: start;
   padding: 14px 16px;
+  overflow: hidden;
   border: 2px solid rgba(35, 48, 68, 0.12);
   border-bottom: 6px solid var(--gold);
   border-radius: 8px;
@@ -443,6 +444,7 @@ h1 {
 
 .weekly-card strong {
   display: block;
+  min-width: 0;
   max-width: 100%;
   overflow-wrap: anywhere;
   word-break: break-word;
@@ -455,6 +457,7 @@ h1 {
 
 .weekly-card span {
   display: block;
+  min-width: 0;
   max-width: 100%;
   color: var(--muted);
   overflow-wrap: anywhere;

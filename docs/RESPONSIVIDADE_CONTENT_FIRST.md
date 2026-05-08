@@ -113,6 +113,17 @@ Isso evita que o texto fique espremido.
 - O layout deve funcionar em telas pequenas, medias e grandes.
 - A interface deve manter aparencia profissional.
 
+## Correção estrutural no HTML
+
+Para garantir o resultado mesmo em telas muito estreitas, os textos mais longos tambem receberam pontos de quebra no HTML.
+
+```html
+<strong>Responsa<wbr>bilidade</strong>
+<span>cumprir<br>combinados</span>
+```
+
+Essa decisao evita depender apenas do navegador para decidir onde quebrar palavras longas.
+
 ## Testes realizados
 
 Foram testadas as seguintes larguras:
