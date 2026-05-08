@@ -442,22 +442,26 @@ h1 {
 }
 
 .weekly-card strong {
+  display: block;
   max-width: 100%;
   overflow-wrap: anywhere;
-  word-break: normal;
+  word-break: break-word;
   hyphens: auto;
-  font-size: clamp(0.92rem, 1.5vw, 1.08rem);
+  white-space: normal;
+  font-size: clamp(0.82rem, 1.5vw, 1.02rem);
   line-height: 1.12;
   text-wrap: balance;
 }
 
 .weekly-card span {
+  display: block;
   max-width: 100%;
   color: var(--muted);
   overflow-wrap: anywhere;
-  word-break: normal;
+  word-break: break-word;
   hyphens: auto;
-  font-size: clamp(0.8rem, 1.25vw, 0.9rem);
+  white-space: normal;
+  font-size: clamp(0.76rem, 1.25vw, 0.88rem);
   line-height: 1.22;
 }
 
@@ -1656,6 +1660,16 @@ h1 {
     gap: 8px;
   }
 
+  .weekly-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .weekly-card {
+    width: 100%;
+    min-height: 86px;
+    padding: 13px 14px;
+  }
+
   .topbar h2 {
     font-size: 1.12rem;
     line-height: 1.18;
@@ -1779,6 +1793,28 @@ h1 {
   .next-button {
     width: 100%;
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .weekly-panel h2 {
+    font-size: 1.28rem;
+    line-height: 1.12;
+  }
+
+  .weekly-panel p {
+    font-size: 0.92rem;
+    line-height: 1.35;
+  }
+
+  .weekly-card strong {
+    font-size: 0.88rem;
+    line-height: 1.08;
+  }
+
+  .weekly-card span {
+    font-size: 0.82rem;
+    line-height: 1.16;
   }
 }
 

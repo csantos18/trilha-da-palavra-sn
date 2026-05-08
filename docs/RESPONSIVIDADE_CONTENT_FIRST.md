@@ -66,23 +66,42 @@ Isso evita que o texto fique espremido.
 ## Protecao de texto
 
 ```css
-.weekly-card strong {
+.weekly-card strong,
+.weekly-card span {
+  display: block;
   max-width: 100%;
   overflow-wrap: anywhere;
-  word-break: normal;
+  word-break: break-word;
   hyphens: auto;
-  font-size: clamp(0.92rem, 1.5vw, 1.08rem);
+  white-space: normal;
+}
+
+.weekly-card strong {
+  font-size: clamp(0.82rem, 1.5vw, 1.02rem);
   line-height: 1.12;
   text-wrap: balance;
 }
 
 .weekly-card span {
-  max-width: 100%;
-  overflow-wrap: anywhere;
-  word-break: normal;
-  hyphens: auto;
-  font-size: clamp(0.8rem, 1.25vw, 0.9rem);
+  font-size: clamp(0.76rem, 1.25vw, 0.88rem);
   line-height: 1.22;
+}
+```
+
+## Regra especifica para mobile estreito
+
+```css
+@media (max-width: 768px) {
+  .weekly-actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 430px) {
+  .weekly-card strong {
+    font-size: 0.88rem;
+    line-height: 1.08;
+  }
 }
 ```
 
@@ -102,6 +121,7 @@ Foram testadas as seguintes larguras:
 - Tablet estreito: 768px.
 - Largura semelhante ao print do cliente: 1150px.
 - Desktop: 1366px.
+- Tela estreita semelhante ao print: 299px.
 
 ## Resultado dos testes
 
@@ -110,6 +130,7 @@ Sem rolagem horizontal.
 Sem texto passando do card.
 Sem overflow em Responsabilidade.
 Sem quebra visual inadequada em Gratidao.
+Sem vazamento em tela estreita de 299px.
 ```
 
 ## Regra profissional adotada
