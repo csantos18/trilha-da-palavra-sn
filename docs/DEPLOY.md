@@ -2,11 +2,17 @@
 
 ## 1. Objetivo
 
-Publicar a Trilha da Palavra SN como site publico para teste com familia, igreja, escola biblica e responsaveis fora do computador local.
+Manter a Trilha da Palavra SN publicada como site publico para teste com familia, igreja, escola biblica e responsaveis fora do computador local.
 
-## 2. Plataforma Recomendada
+## 2. Plataforma Atual
 
-Netlify e a opcao recomendada para validacao publica inicial, pois aceita projeto estatico em HTML, CSS e JavaScript sem servidor proprio.
+Netlify e o ambiente atual de publicacao:
+
+```text
+https://trilha-da-palavra-sn.netlify.app
+```
+
+Ele e adequado para a validacao publica inicial porque aceita projeto estatico em HTML, CSS e JavaScript sem servidor proprio.
 
 ## 3. Configuracao do Projeto
 
@@ -16,14 +22,21 @@ O arquivo `netlify.toml` define:
 - ausencia de etapa de build;
 - headers de cache para reduzir risco de carregar versao antiga durante validacoes.
 
-## 4. Publicacao
+## 4. Publicacao e Manutencao
 
-1. Acessar o Netlify.
-2. Criar ou entrar em uma conta.
-3. Conectar repositorio ou publicar a pasta do projeto.
-4. Confirmar que o diretorio de publicacao e a raiz.
-5. Validar o link gerado no celular, tablet e computador.
-6. Enviar o link final somente depois de testar uma rodada completa.
+Status validado em 2026-05-08:
+
+- home `/` abre com status 200;
+- `index.html`, `styles.css`, `script.js` e `data.js` abrem com status 200;
+- `netlify.toml` nao fica publico no site;
+- o projeto local e o GitHub estao sincronizados na branch `main`.
+
+Para novas publicacoes:
+
+1. Enviar as alteracoes para a branch `main`.
+2. Confirmar deploy concluido no Netlify.
+3. Validar o link no celular, tablet e computador.
+4. Testar uma rodada completa antes de enviar o link para terceiros.
 
 ## 5. Criterios de Aceite
 

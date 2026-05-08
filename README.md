@@ -133,4 +133,10 @@ Trilha da Palavra SN/
 
 ## Status do Projeto
 
-Versao funcional para validacao educativa, demonstracao e publicacao estatica gratuita. Antes de uso publico amplo, recomenda-se revisao biblica, revisao pedagogica e teste acompanhado com o publico-alvo.
+Versao publicada no Netlify para validacao educativa e demonstracao online:
+
+```text
+https://trilha-da-palavra-sn.netlify.app
+```
+
+O projeto e estatico, sem API, sem banco remoto e sem coleta de dados pessoais. Antes de uso publico amplo, recomenda-se revisao biblica, revisao pedagogica e teste acompanhado com o publico-alvo.

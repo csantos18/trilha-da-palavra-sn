@@ -2,7 +2,7 @@
 
 ## 1. Situacao Atual
 
-O projeto esta adequado para MVP, validacao educativa, apresentacao, teste acompanhado e publicacao estatica. A arquitetura atual favorece simplicidade, baixo custo e privacidade.
+O projeto esta publicado no Netlify e adequado para MVP, validacao educativa, apresentacao e teste acompanhado. A arquitetura atual favorece simplicidade, baixo custo e privacidade.
 
 ## 2. Evolucoes Recomendadas
 

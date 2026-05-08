@@ -31,11 +31,11 @@
 
 ## Deploy
 
-- [ ] Publicar em ambiente de teste.
-- [ ] Validar link em outra rede.
-- [ ] Validar cache apos nova publicacao.
+- [x] Publicar em ambiente de teste: Netlify.
+- [x] Validar link em outra rede.
+- [x] Validar cache apos nova publicacao.
 - [ ] Definir dominio oficial, se aplicavel.
-- [ ] Confirmar HTTPS.
+- [x] Confirmar HTTPS.
 
 ## Documentacao
 
