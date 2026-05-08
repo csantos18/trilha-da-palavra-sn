@@ -420,7 +420,7 @@ h1 {
 
 .weekly-actions {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(176px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
   gap: 10px;
   align-items: stretch;
 }

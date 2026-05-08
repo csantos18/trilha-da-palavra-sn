@@ -47,7 +47,7 @@ O resultado era:
 ```css
 .weekly-actions {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(176px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
   gap: 10px;
   align-items: stretch;
 }
@@ -55,7 +55,7 @@ O resultado era:
 
 ## Como a nova regra funciona
 
-Cada card precisa ter uma largura minima confortavel.
+Cada card precisa ter uma largura minima confortavel de ate 210px.
 
 Se houver espaco, o navegador coloca mais cards na mesma linha.
 
