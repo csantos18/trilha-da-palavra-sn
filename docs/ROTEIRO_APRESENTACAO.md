@@ -31,7 +31,7 @@ O projeto oferece rodadas curtas com perguntas, feedback educativo, missoes prat
 - Sem coleta de dados pessoais.
 - Uso acompanhado por familia, igreja ou educador.
 - Funciona em celular, tablet e desktop.
-- Pode ser publicado como site estatico.
+- Ja esta publicado como site estatico no Netlify para demonstracao e validacao.
 
 ## 6. Encerramento
 
